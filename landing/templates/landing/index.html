@@ -1,0 +1,183 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Candy Food</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header text-light">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<img class="header-logo-image" src="{% static 'images/logo.svg' %}" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center text-light">
+				<div class="hero-bg"></div>
+				<div class="hero-particles-container">
+					<canvas id="hero-particles"></canvas>
+				</div>
+                <div class="container-sm">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">"CandyFood" Aplicación Móvil</h1>
+	                        <p class="hero-paragraph">
+								CandyFood es una aplicación móvil que te permite ordenar dulces desde la comodidad de tu hogar, oficina o cualquier otro lugar. Con CandyFood, puedes encontrar una amplia variedad de dulces de todo el mundo, desde chocolates y caramelos hasta papitas y chucherias.</p>
+	                        <div class="hero-cta">
+								<a class="button button-primary button-wide-mobile" href="#">Conseguir Acceso Anticipado</a>
+							</div>
+						</div>
+						<div class="mockup-container">
+							<div class="mockup-bg">
+								<img src="{% static 'images/iphone-hero-bg.svg' %}" alt="iPhone illustration">
+							</div>
+							<img class="device-mockup" src="{% static 'images/iphone-hero.png' %}" alt="iPhone Hero">
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="features-extended section">
+                <div class="features-extended-inner section-inner">
+					<div class="features-extended-wrap">
+						<div class="container">
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="{% static 'images/iphone-feature-bg-01.svg' %}" alt="iPhone Feature 01 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="{% static 'images/iphone-feature-01.png' %}" alt="iPhone Feature 01">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Una amplia selección de dulces.</h3>
+									<p class="m-0">Encuentra una gran variedad de dulces, desde chocolates hasta papitas, picante hasta salado y todos los gustos.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="{% static 'images/iphone-feature-bg-02.svg' %}" alt="iPhone Feature 02 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="{% static 'images/iphone-feature-02.png' %}" alt="iPhone Feature 02">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Entrega rápida.</h3>
+									<p class="m-0">Tus dulces se entregaran en minutos u horas dependiendo de la ubicación, esta entrega será lo más rápido posible y las condiciones de tus dulces seran las mejores.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="{% static 'images/iphone-feature-bg-03.svg' %}" alt="iPhone Feature 03 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="{% static 'images/iphone-feature-03.png' %}" alt="iPhone Feature 03">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Pagos seguros y sencillos.</h3>
+									<p class="m-0">Puedes pagar tus dulces con tarjeta de crédito, débito o PayPal, así como tambien podrás pagar en efectivo, CandyFood busca la comodidad de sus clientes.</p>
+								</div>
+							</div>
+							<div class="feature-extended">
+								<div class="feature-extended-image">
+									<div class="mockup-bg">
+										<img src="{% static 'images/iphone-feature-bg-04.svg' %}" alt="iPhone Feature 04 illustration">
+									</div>
+									<img class="device-mockup is-revealing" src="{% static 'images/iphone-feature-04.png' %}" alt="iPhone Feature 04">
+								</div>
+								<div class="feature-extended-body is-revealing">
+									<h3 class="mt-0 mb-16">Excelente equipo de trabajo.</h3>
+									<p class="m-0">Intentamos contar con los mejores, porque la mejor aplicación de dulces de México debe tener a los mejores con ellos.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </section>
+        </main>
+
+		<footer class="site-footer">
+			<div class="footer-particles-container">
+				<canvas id="footer-particles"></canvas>
+			</div>
+			<div class="site-footer-top">
+				<section class="cta section text-light">
+					<div class="container-sm">
+						<div class="cta-inner section-inner">
+							<div class="cta-header text-center">
+								<h2 class="section-title mt-0">Mantente atento</h2>
+								<p class="section-paragraph">Pronto estaremos en la puerta de tu casa, la mejor aplicación de dulces, bienvenidos al nuevo mundo, bienvenidos a CandyFood.</p>
+								<div class="cta-cta">
+									<a class="button button-primary button-wide-mobile" href="#">Consigue Acceso Anticipado</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="site-footer-bottom">
+				<div class="container">
+					<div class="site-footer-inner">
+						<div class="brand footer-brand">
+							<a href="#">
+								<img src="{% static 'images/logo.svg' %}" alt="Venus logo">
+							</a>
+						</div>
+						<ul class="footer-links list-reset">
+							<li>
+								<a href="#">Contactp</a>
+							</li>
+							<li>
+								<a href="#">Sobre Nosotros</a>
+							</li>
+							<li>
+								<a href="#">FAQ's</a>
+							</li>
+							<li>
+								<a href="#">Soporte</a>
+							</li>
+						</ul>
+						<ul class="footer-social-links list-reset">
+							<li>
+								<a href="http://www.instagram.com/jfassj">
+									<span class="screen-reader-text">Facebook</span>
+									<svg width="16" height="16" xmlns="http://www.instagram.com/jfassj">
+										<path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.x.com/jfassj">
+									<span class="screen-reader-text">Twitter</span>
+									<svg width="16" height="16" xmlns="http://www.x.com/jfassj">
+										<path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="footer-copyright">&copy; 2024 CandyFood, Todos los Derechos Reservados</div>
+					</div>
+				</div>
+			</div>
+        </footer>
+    </div>
+
+    <script src="{% static 'js/main.min.js' %}"></script>
+</body>
+</html>
